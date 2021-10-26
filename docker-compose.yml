@@ -44,7 +44,7 @@ services:
     ports:
       - 9092:9092
     volumes:
-      - $PWD/kafka:/var/lib/kafka      
+      - $PWD/kafka:/var/lib/kafka
     environment:
       - 'KAFKA_BROKER_ID=1'
       - 'ALLOW_PLAINTEXT_LISTENER=yes'  

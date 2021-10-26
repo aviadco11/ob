@@ -4,6 +4,10 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
+echo "install vim"
+echo "------------"
+#docker exec --user="root" kafka bash -c "apt-get update & apt-get install vim"
+echo ""
 echo "insert data to mysql :"
 echo "------------------------"
 docker exec mysql bash -c " mysql -u root -p123 < /var/lib/mysql/insert-data-mysql.sql"
